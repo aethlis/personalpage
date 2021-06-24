@@ -115,6 +115,16 @@
 
 /* animations */
 
+#viewport {
+    position: fixed;
+    display: flex;
+    top: 100px;
+    bottom: 100px;
+    width: 100%;
+    height: calc(100vh - 200px);
+    z-index: 88;
+}
+
 .opacity-ani {
     animation: opacity-ani 1s 1;
     opacity: 1;
@@ -183,6 +193,11 @@
         </div>
     </div>
 
+
+    <!-- animation add viewport -->
+
+    <div id="viewport"></div>
+
     <!-- page 1 -->
 
     <div class="container">
@@ -208,8 +223,9 @@
     <script>
         const bigname = document.querySelector('.bigname')
         const pagetwo = document.querySelector('.pagetwo')
+    
 
-
+        const intersectionRoot = document.querySelector('#viewport')
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -221,6 +237,8 @@
                 }
                 bigname.classList.remove('opacity-ani');
                 pagetwo.classList.remove('opacity-ani');
+            }, {
+                root: intersectionRoot
             })
         })
 
