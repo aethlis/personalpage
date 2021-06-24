@@ -196,7 +196,7 @@
 
     <!-- animation add viewport -->
 
-    <div id="viewport"></div>
+
 
     <!-- page 1 -->
 
@@ -223,14 +223,11 @@
     <script>
         const bigname = document.querySelector('.bigname')
         const pagetwo = document.querySelector('.pagetwo')
-    
+
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     bigname.classList.add('opacity-ani');
-                    return;
-
-                    pagetwo.classList.add('opacity-ani');
                     return;
                 }
                 bigname.classList.remove('opacity-ani');
@@ -241,7 +238,6 @@
 
         // obervers
         observer.observe(document.querySelector('.bigname-wrapper'))
-        observer.observe(document.querySelector('.pagetwo-wrapper'))
     </script>
 </body>
 </html>
