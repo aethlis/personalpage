@@ -46,7 +46,8 @@
         .navselectors:hover {
             /* transform: scale(1.3); */
             /* text-shadow: 0.5px 0.5px #d4c580, 1px 1px #d4c580, 1.5px 1.5px #d4c580, 2px 2px #d4c580, 2.5px 2.5px #d4c580; */
-            text-shadow: 0.5px 0.5px #383838, 1px 1px #383838, 1.5px 1.5px #383838, 2px 2px #383838, 2.5px 2.5px #383838;
+            /* text-shadow: 0.5px 0.5px #B3AE98, 1px 1px #CDB493, 1.5px 1.5px #3A372C, 2px 2px #575651, 2.5px 2.5px #716858; */
+            text-shadow: 0px 2px rgba(255, 0, 0, 0.5), 0px -2px rgba(0, 0, 255, 0.5), 2px 0px rgba(0, 255, 0, 0.5);
             transform: translateX(-4px) translateY(-4px) scale(1.3);
 
             transition: 0.4s;
