@@ -224,8 +224,6 @@
         const bigname = document.querySelector('.bigname')
         const pagetwo = document.querySelector('.pagetwo')
     
-
-        const intersectionRoot = document.querySelector('#viewport')
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -237,8 +235,6 @@
                 }
                 bigname.classList.remove('opacity-ani');
                 pagetwo.classList.remove('opacity-ani');
-            }, {
-                root: intersectionRoot
             })
         })
 
