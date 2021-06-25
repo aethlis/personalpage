@@ -5,178 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./headercss.css">
+    <link rel="stylesheet" href="./home-css.css">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/b39165152a.js" crossorigin="anonymous"></script>
-    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zhi+Mang+Xing&display=swap');
-    
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #1F1F1F;
-
-        font-family: Helvetica, 		   
-		            '맑은 고딕', 'malgun gothic', 		   
-		            'Apple SD Gothic Neo', 'Apple SD 산돌고딕 Neo',  		   
-		            'Microsoft NeoGothic',  		   
-		            'Droid sans', sans-serif; ;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /* ------------------------------------------------- */
-
-    .container {
-        width: 100%;
-        height: fit-content;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column nowrap;
-    }
-
-    .page {
-        display: flex;
-        justify-content: center;
-    }
-
-    .pageone {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .pageone img
-    {
-        position: fixed;
-        z-index: -100;
-    }
-
-    .pagetwo {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        z-index: 10;
-        background-color: #1F1F1F;
-    }
-
-        .page1background {
-            width: 3123px;
-            height: 1600px;
-            margin-top: 200px;
-            filter: blur(7px) brightness(1.3);
-        }
-
-        .midcontent {
-            width: 1280px;
-            height: 100vh;
-            position: relative;
-            top: 0;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .midone {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .bigname {
-            width: 300px;
-            height: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 70px;
-            font-family: 'Zhi Mang Xing', cursive;
-            font-weight: 400;
-            position: absolute;
-            color: white;
-            text-shadow: 0px 0px 30px black;
-            opacity: 0;
-            border-radius: 30px;
-            cursor: pointer;
-
-            transition: 0.4s;
-        }
-
-        .bigname-wrapper {
-            width: fit-content;
-            height: fit-content;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .bigname:hover {
-            transform: scale(1.3);
-            
-            transition: 0.4s;
-        }
-
-        .pagetwo-wrapper {
-            width: 100%;
-            height: fit-content;
-        }
-
-
-
-
-/* animations */
-
-#viewport {
-    position: fixed;
-    display: flex;
-    top: 100px;
-    bottom: 100px;
-    width: 100%;
-    height: calc(100vh - 200px);
-    z-index: 88;
-}
-
-.opacity-ani {
-    animation: opacity-ani 1s 1;
-    opacity: 1;
-}
-
-.rev-opacity-ani {
-    animation: rev-opacity-ani 1s 1;
-    opacity: 0;
-}
-
-@keyframes opacity-ani {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes rev-opacity-ani {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-
-
-    </style>
 </head>
 <body>
     <div class="header">
@@ -214,10 +45,6 @@
     </div>
 
 
-    <!-- animation add viewport -->
-
-
-
     <!-- page 1 -->
 
     <div class="container">
@@ -230,60 +57,49 @@
             </div>
         </div>
 
+
+    <!-- page 2 -->
+
         <div class="pagetwo-wrapper">
             <div class="page pagetwo">
                 <div class="midcontent midtwo">
+                    <div class="aboutMeShort">
+                        <div class="aboutMeShort-photo">
+                            <img src="./images/jerry_photo.jpg" alt="About Me" class="meShort-photo">
+                        </div>
+                        <div class="aboutMeShort-text">
+                            <div class="textOne">
+                                <ul class="textOneChange">
+                                    <li id="codeName">#codename난제리</li>
+                                    <li class="changingText">#톰의 친구</li>
+                                    <li class="changingText">#이름은 이현제</li>
+                                    <li id="codeName">#codename난제리</li>
+                                </ul>
+                            </div>
+                            <div class="textTwo">
+                                <ul class="textTwoChange">
+                                    <li class="changingText">#04 #거꾸로캠퍼스</li>
+                                    <li class="changingText">#생일 #04.28</li>
+                                    <li class="changingText">#고양이덕후</li>
+                                    <li class="changingText">#04 #거꾸로캠퍼스</li>
+                                </ul>
+                            </div>
+                            <div class="textThree">
+                                <ul class="textThreeChange">
+                                    <li class="changingText">#음악을 좋아함</li>
+                                    <li class="changingText">#먹는거 좋아함</li>
+                                    <li class="changingText">#게임 좋아함</li>
+                                    <li class="changingText">#음악을 좋아함</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <script>
-        const bigname = document.querySelector('.bigname')
-        const pagetwo = document.querySelector('.pagetwo')
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    bigname.classList.add('opacity-ani');
-                    return;
-                }
-                bigname.classList.remove('opacity-ani');
-                pagetwo.classList.remove('opacity-ani');
-            })
-        })
-
-        // obervers
-        observer.observe(document.querySelector('.bigname-wrapper'))
-
-
-        // function fadeOutOnScroll(element) {
-        //     if (!element) {
-        //         return;
-        //     }
-
-        //     var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top
-        //     var elementHeight = bigname.offsetHeight
-        //     var scrollTop = document.documentElement.scrollTop
-
-        //     var opacity = 1
-
-        //     if (scrollTop > distanceToTop) {
-        //         opacity = 1 - (scrollTop - distanceToTop) / elementHeight
-        //     }
-
-        //     if (opacity >= 0) {
-        //         element.style.opacity = opacity
-        //     }
-        // }
-
-        // function scrollHandler() {
-        //     fadeOutOnScroll(bigname)
-        //     fadeOutOnScroll(pagetwo)
-        // }
-
-        // window.addEventListener('scroll', scrollHandler)
-    </script>
+<script src="./home-javascript.js"></script>
 </body>
 </html>
