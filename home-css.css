@@ -221,6 +221,8 @@ li {
                 height: 80px;
                 margin-bottom: 19px;
 
+                /* box-shadow: 0 0 30px 3px black inset; */
+
                 overflow: hidden;
             }
 
@@ -241,13 +243,16 @@ li {
                     }
 
                     .textOneChange {
-                        animation: textrollone 8s infinite;
+                        animation: textrollone 15s infinite;
+                        animation-delay: 0s;
                     }
                     .textTwoChange {
-                        animation: textrolltwo 6s infinite;
+                        animation: textrolltwo 15s infinite;
+                        animation-delay: 1s;
                     }
                     .textThreeChange {
-                        animation: textrollthree 10s infinite;
+                        animation: textrollthree 15s infinite;
+                        animation-delay: 2s;
                     }
 
                         #codeName {
