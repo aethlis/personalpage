@@ -243,13 +243,15 @@ li {
                     }
 
                         #codeName {
-                            font-family: "apple-Bold", sans-serif;
+                            font-family: "apple", sans-serif;
+                            font-weight: bold;
                             font-size: 67px;
                             color: white;
                             margin-bottom: 80px;
                         }
                         .changingText {
-                            font-family: "apple-Light", sans-serif;
+                            font-family: "apple", sans-serif;
+                            font-weight: 300;
                             font-size: 67px;
                             color: white;
                             font-weight: 100;
