@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./headercss.css">
     <link rel="stylesheet" href="./home-css.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./webpageDefault.css">
+    <title>H.mainpage</title>
     <script src="https://kit.fontawesome.com/b39165152a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -63,43 +64,91 @@
         <div class="pagetwo-wrapper">
             <div class="page pagetwo">
                 <div class="midcontent midtwo">
-                    <div class="aboutMeShort">
-                        <div class="aboutMeShort-photo">
-                            <img src="./images/jerry_photo.jpg" alt="About Me" class="meShort-photo">
-                        </div>
-                        <div class="aboutMeShort-text">
-                            <div class="textOne">
-                                <ul class="textOneChange">
-                                    <li id="codeName">#codename난제리</li>
-                                    <li class="changingText">#톰의 친구</li>
-                                    <li class="changingText">#이름은 이현제</li>
-                                    <li id="codeName">#codename난제리</li>
-                                </ul>
+                    <div class="aboutMeShortWrapper">
+                        <div class="aboutMeShort">
+                            <div class="aboutMeShort-photo">
+                                <img src="./images/jerry_photo.jpg" alt="About Me" class="meShort-photo">
                             </div>
-                            <div class="textTwo">
-                                <ul class="textTwoChange">
-                                    <li class="changingText">#거꾸로캠퍼스</li>
-                                    <li class="changingText">#생일 #04.28</li>
-                                    <li class="changingText">#고양이덕후</li>
-                                    <li class="changingText">#거꾸로캠퍼스</li>
-                                </ul>
-                            </div>
-                            <div class="textThree">
-                                <ul class="textThreeChange">
-                                    <li class="changingText">#음악을 좋아함</li>
-                                    <li class="changingText">#먹는거 좋아함</li>
-                                    <li class="changingText">#게임 좋아함</li>
-                                    <li class="changingText">#음악을 좋아함</li>
-                                </ul>
+                            <div class="aboutMeShort-text">
+                                <div class="textOne">
+                                    <ul class="textOneChange">
+                                        <li id="codeName">#codename난제리</li>
+                                        <li class="changingText">#톰의 친구</li>
+                                        <li class="changingText">#이름은 이현제</li>
+                                        <li id="codeName">#codename난제리</li>
+                                    </ul>
+                                </div>
+                                <div class="textTwo">
+                                    <ul class="textTwoChange">
+                                        <li class="changingText">#거꾸로캠퍼스</li>
+                                        <li class="changingText">#2004.04.28</li>
+                                        <li class="changingText">#고양이덕후</li>
+                                        <li class="changingText">#거꾸로캠퍼스</li>
+                                    </ul>
+                                </div>
+                                <div class="textThree">
+                                    <ul class="textThreeChange">
+                                        <li class="changingText">#음악을 좋아함</li>
+                                        <li class="changingText">#먹는거 좋아함</li>
+                                        <li class="changingText">#게임 좋아함</li>
+                                        <li class="changingText">#음악을 좋아함</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="lineWrapper">
+                        <div class="line">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="620" height="6" viewBox="0 0 620 6">
+                                <line id="선_4" data-name="선 4" x2="615" y2="1" transform="translate(2.504 2.504)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5" opacity="0.882"/>
+                            </svg>                              
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
 
-<script src="./home-javascript.js"></script>
+<!-- <script src="./home-javascript.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
+<script>
+
+    gsap.from('.header', {
+        duration: 1,
+        opacity: 0,
+        y: -100
+    })
+
+    gsap.from(".page1background", {
+        scrollTrigger: '.page1background',
+        duration: 1,
+        opacity: 0,
+        y: 200
+    })
+
+    gsap.to('.bigname', {duration: 0.5, opacity: 1,
+        scrollTrigger: {
+            trigger: '.bigname',
+            toggleActions: "restart reset restart reset"
+        }
+    })
+
+    gsap.from('.aboutMeShort', {
+        duration: 1,
+        opacity: 0,
+        y: 100,
+        scrollTrigger: {
+            trigger: '.aboutMeShort',
+            toggleActions: "restart none none reverse",
+        }
+    })
+
+</script>
+
 </body>
 </html>
