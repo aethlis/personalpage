@@ -198,13 +198,13 @@ li {
             }
 
         .aboutMeShort-text {
-            width: 517px;
+            width: fit-content;
             height: 296;
             margin-left: 21px;
         }
 
             .textOne, .textTwo, .textThree{
-                width: 517px;
+                width: fit-content;
                 height: 80px;
                 margin-bottom: 19px;
 
@@ -225,7 +225,7 @@ li {
                 }
 
                     .textOneChange, .textTwoChange, .textThreeChange{
-                        width: 517px;
+                        width: fit-content;
                         height: fit-content;
                     }
 

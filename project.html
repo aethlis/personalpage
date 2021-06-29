@@ -95,7 +95,7 @@
                     </svg></a>
                 </div>
 
-                <div class="navselectors"><a class="navlinks" href="">About me</a>
+                <div class="navselectors"><a class="navlinks" href="./aboutme.html">About me</a>
                 </div>
                   
                 <div class="navselectors"><a class="navlinks" href="./project.html">Projects</a>
@@ -138,44 +138,44 @@
 <script>
 
 gsap.from('.header', {
-        duration: 1,
-        opacity: 0,
-        y: -100,
-    })
+    duration: 1,
+    opacity: 0,
+    y: -100,
+})
 
-    // gsap.to('.projects', {
-    //     // duration: 0.5,
-    //     opacity: 0,
-    //     scrollTrigger: {
-    //         trigger: '.projects',
-    //         // markers: true,
-    //         scrub: 1,
-    //         toggleActions: "restart none none reverse",
-    //         start: "bottom 20%",
-    //         end: "top top"
-    //     }
-    // })
+// gsap.to('.projects', {
+//     // duration: 0.5,
+//     opacity: 0,
+//     scrollTrigger: {
+//         trigger: '.projects',
+//         // markers: true,
+//         scrub: 1,
+//         toggleActions: "restart none none reverse",
+//         start: "bottom 20%",
+//         end: "top top"
+//     }
+// })
 
-    gsap.from('.projects', {
-        duration: 1,
-        opacity: 0,
-        x: 100,
-    })
-    gsap.from('.scrollTitle', {
-        duration: 1,
-        opacity: 0,
-        x: 100,
-    })
-    gsap.from('.scrollType', {
-        duration: 1,
-        opacity: 0,
-        x: 200,
-    })
-    gsap.from('.scrollLine', {
-        duration: 1,
-        opacity: 0,
-        x: 100,
-    })
+gsap.from('.projects', {
+    duration: 1,
+    opacity: 0,
+    x: 100,
+})
+gsap.from('.scrollTitle', {
+    duration: 1,
+    opacity: 0,
+    x: 100,
+})
+gsap.from('.scrollType', {
+    duration: 1,
+    opacity: 0,
+    x: 200,
+})
+gsap.from('.scrollLine', {
+    duration: 1,
+    opacity: 0,
+    x: 100,
+})
 
 
 for (var i in projects) {
