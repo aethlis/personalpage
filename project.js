@@ -5,7 +5,7 @@ var projects = [
         project_type: "Team Project MTP",
         info_data: [
             {
-                project_link: "./project_info_single1.html",
+                project_link: "./projectpage.html",
                 project_infoname: "거캠 20/3모듈 주제중심",
                 project_img: "./",
             }
@@ -140,7 +140,7 @@ for (var i in projects) {
         var date = project.info_data[j]
         document.querySelector(".scrollSelector").innerHTML += `
         <div class="scrollContents" id="data-${i}">
-            <div class="scrollTitle">${project.project_name}</div>
+            <div class="scrollTitle"><a href="${date.project_link}">${project.project_name}<a></div>
             <div class="scrollType">${project.project_type}</div>
         </div>
         `;

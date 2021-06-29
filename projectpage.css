@@ -1,0 +1,88 @@
+.pageone {
+    width: 100%;
+    height: fit-content;
+}
+
+.midone {
+    display: flex;
+    justify-content: center;
+}
+
+.contentHolder {
+    width: 1020px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.projectName {
+    height: fit-content;
+    width: fit-content;
+    margin-top: 110px;
+    font-size: 30px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contentPage1 {
+    width: calc(100% - 8px);
+    height: 450px;
+    border: solid white 4px;
+    margin-top: 10px;
+    margin-bottom: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* background-size: cover;
+    background-position-y: -280px;
+    background-image: url(./images/2020_3M_MTP/주제공감.jpg);
+    background-repeat: no-repeat; */
+}
+
+.slideHolder {
+    width: 100%;
+    height: fit-content;
+}
+
+    .slide {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 300px;
+        gap: 42px;
+    }
+
+    .reverseRow {
+        flex-flow: row-reverse nowrap;
+    }
+
+        .slidePhoto {
+            width: 520px;
+            height: 370px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border: solid white 4px;
+            /* background-repeat: no-repeat;
+            background-image: url(./images/2020_3M_MTP/주제공감2.jpg);
+            background-size: cover;
+            background-position-y: center; */
+        }
+
+        .slideText {
+            width: 450px;
+            height: 354px;
+            color: white;
+            font-family: 'apple', sans-serif;
+            border: solid none 4px;
+            font-weight: 400;
+            font-size: 18px;
+            text-align: left;
+            line-height: 1.5rem;
+        }
+
+

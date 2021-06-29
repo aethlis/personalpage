@@ -49,7 +49,8 @@
         <div class="page pageone">
             <div class="midcontent midone">
                 <div class="introduction">div.about-me</div>
-                    <div class="imageGroup">
+
+                <div class="imageGroup">
                     <div class="introImage ImgOne">
                         <img src="./images/jerry_photo.jpg" alt="introPhoto" class="introPhoto">
                     </div>
@@ -60,6 +61,7 @@
                         <img src="./images/jerry_photo.jpg" alt="introPhoto" class="introPhoto">
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -94,7 +96,7 @@ gsap.to('.imageGroup', {
     opacity: 0,
     scrollTrigger: {
         trigger: '.imageGroup',
-        markers: true,
+        // markers: true,
         scrub: true,
         toggleActions: "restart none none reverse",
         start: "20% 50%",
@@ -106,6 +108,12 @@ gsap.from('.introduction', {
     duration: 1,
     opacity: 0,
     x: 100,
+})
+
+gsap.from('.imageGroup', {
+    duration: 1,
+    opacity: 0,
+    x: 200,
 })
 
 </script>
