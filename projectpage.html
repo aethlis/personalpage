@@ -164,5 +164,33 @@
             </div>
         </div>
     </div>
+
+
+
+<script src="./projectpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+
+<script>
+gsap.from(".S1", {
+    duration: 1,
+    opacity: 0,
+    x: 300,
+    scrollTrigger: {
+        trigger: ".S1",
+        toggleActions: "restart none none reverse",
+    }
+})
+
+gsap.from(slideTexts, {
+    duration: 1,
+    opacity: 0,
+    y: 100,
+    scrollTrigger: {
+        trigger: slides,
+        toggleActions: "restart none none reverse",
+    }
+})
+</script>
 </body>
 </html>

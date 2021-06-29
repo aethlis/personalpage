@@ -148,11 +148,13 @@
             toggleActions: "restart none none reverse",
         }
     })
+
     gsap.from('.aboutMeShort-text', {
         duration: 1,
         opacity: 0,
         y: 100,
         scrollTrigger: {
+            // markers: true,
             trigger: '.aboutMeShort',
             toggleActions: "restart none none reverse",
         }

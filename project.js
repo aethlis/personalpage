@@ -140,15 +140,16 @@ for (var i in projects) {
         var date = project.info_data[j]
         document.querySelector(".scrollSelector").innerHTML += `
         <div class="scrollContents" id="data-${i}">
-            <div class="scrollTitle"><a href="${date.project_link}">${project.project_name}<a></div>
+            <div class="scrollTitle">${project.project_name}</div>
             <div class="scrollType">${project.project_type}</div>
         </div>
         `;
     }
 }
+{/* <div class="scrollTitle"><a href="${date.project_link}">${project.project_name}<a></div> */}
 
 // for (var k in projects) {   
-//     var el  = document.getElementById(`data-${k}`); 
+//     var el  = document.getElementById(`data-${k}`);
 //     var data = Object.assign({}, projects[k]);
     
 //     el.addEventListener('click', function() {
