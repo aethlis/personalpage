@@ -42,12 +42,14 @@
     margin-left: 20px;
     margin-top: 10px;
     z-index: 2;
+    opacity: 0.7;
 }
 
 .ImgThree {
     margin-left: 40px;
     margin-top: 20px;
     z-index: 1;
+    opacity: 0.5;
 }
 
     .introPhoto {
