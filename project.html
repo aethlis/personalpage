@@ -13,7 +13,7 @@
 
     .pageone {
         width: 100%;
-        height: 1240px;
+        height: 1140px;
         position: relative;
 
         overflow: hidden;
@@ -55,9 +55,11 @@
     .scrollContents {
         width: 500px;
         height: fit-content;
+        padding-right: auto;
         display: flex;
+        padding-bottom: 30px;
+        margin-bottom: 35px;
         flex-flow: row nowrap;
-        margin-bottom: 65px;
         align-items: center;
     }
 
@@ -67,6 +69,8 @@
             font-weight: 200;
             margin-right: auto;
             color: white;
+
+            cursor: pointer;
         }
 
         .scrollType {
@@ -76,7 +80,46 @@
             display: flex;
             margin-right: 0;
             margin-left: auto;
+
+            cursor: pointer;
         }
+
+    #hoverInfo {
+        position: fixed;
+        width: 400px;
+        height: fit-content;
+        top: 30vh;
+        right: 25vh;
+        align-self: center;
+        justify-content: center;
+        display: none;
+        flex-flow: column nowrap;
+        z-index: 3;
+    }
+
+        #hoverTitle {
+            font-family: "apple", sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            width: 400px;
+            height: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        #hoverImage {
+            background-color: black;
+            width: 396px;
+            height: 280px;
+            border: solid white 2px;
+            overflow: hidden;
+        }
+
+        #images {
+            width: 100%;
+        }
+
+        
 
 
     </style>
@@ -125,7 +168,10 @@
                     </svg>                      
                 </div>
                 <div class="projects">div.projects</div>
-                <div class="scrollSelector">
+                <div class="scrollSelector"></div>
+                <div id="hoverInfo">
+                    <div id="hoverTitle"></div>
+                    <div id="hoverImage"></div>
                 </div>
             </div>
         </div>

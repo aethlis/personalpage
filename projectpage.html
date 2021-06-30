@@ -47,7 +47,7 @@
 
     <div class="container">
         <div class="page pageone">
-            <div class="midcontent midone">
+            <div class="midcontentSpecialWithoutHidden midone">
 
                 <div class="contentHolder">
 
@@ -172,25 +172,75 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
 
 <script>
-gsap.from(".S1", {
-    duration: 1,
-    opacity: 0,
-    x: 300,
-    scrollTrigger: {
-        trigger: ".S1",
-        toggleActions: "restart none none reverse",
-    }
+
+const slides = gsap.utils.toArray('.slide');
+const slideTexts = gsap.utils.toArray('.slideText');
+const slidePhotos = gsap.utils.toArray('.slidePhoto')
+
+slides.forEach (slide => {
+    gsap.from(slide, {
+        duration: 0.5,
+        opacity: 0,
+        x: 300,
+        // rotation: -10,
+        scrollTrigger: {
+            trigger: slide,
+            scrub: 1,
+            // toggleActions: "restart none none reverse",
+            markers: true,
+            start: "center bottom",
+            end: "40% 50%",
+        }
+    })
 })
 
-gsap.from(slideTexts, {
+gsap.from('.header', {
     duration: 1,
     opacity: 0,
-    y: 100,
-    scrollTrigger: {
-        trigger: slides,
-        toggleActions: "restart none none reverse",
-    }
+    y: -100,
 })
+
+gsap.from('.projectName', {
+    duration: 1,
+    opacity: 0,
+    x: 100,
+})
+
+gsap.from('.contentPage1', {
+    duration: 1,
+    opacity: 0,
+    x: 200,
+})
+
+
+
+
+
+// slideTexts.forEach(slideText => {
+//     gsap.from(slideText, {
+//     duration: 1,
+//     opacity: 0,
+//     // x: 300,
+//     scrollTrigger: {
+//         trigger: slideText,
+//         // scrub: true,
+//         }
+//     })
+// })
+
+// slidePhotos.forEach(slidePhoto => {
+//     gsap.from(slidePhoto, {
+//     duration: 1,
+//     opacity: 0,
+//     // x: 300,
+//     scrollTrigger: {
+//         trigger: slidePhoto,
+//         // scrub: true,
+//         // markers: true,
+//         }
+//     })
+// })
+
 </script>
 </body>
 </html>
