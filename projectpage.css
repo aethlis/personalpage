@@ -30,11 +30,11 @@
 .projectTitle {
     height: fit-content;
     width: fit-content;
-    font-size: 40px;
-    margin-bottom: 50px;
+    font-size: 30px;
+    margin-bottom: 20px;
     color: white;
     font-family: "Raleway", sans-serif;
-    font-weight: bold;
+    font-weight: 200;
     font-style: italic;
 }
 
@@ -121,7 +121,7 @@
             color: white;
             font-family: 'apple', sans-serif;
             border: solid none 4px;
-            font-weight: 400;
+            font-weight: 200;
             font-size: 18px;
             text-align: left;
             line-height: 1.5rem;

@@ -8,7 +8,7 @@ var projects = [
         info_data: [
             {
                 project_infoname: "거캠 20/3모듈 주제중심",
-                project_img: "./images/M3_주제공감.jpeg",
+                project_img: "./images/climate-change_49132068\ 복사본\ 2.jpeg",
             }
         ]
     },
@@ -205,8 +205,6 @@ Array.prototype.forEach.call(el, function (item, index) {
         var title = projects[index].info_data[0].project_infoname
         var link = projects[index].info_data[0].project_link
 
-        hoverTitle.innerHTML = ""
-        hoverImage.innerHTML = ""
 
         // hoverInfo.style.display = "none"
 
@@ -218,6 +216,9 @@ Array.prototype.forEach.call(el, function (item, index) {
         })
 
         document.querySelector('scrollWrap') = () => tween.play()
+
+        hoverTitle.innerHTML = ""
+        hoverImage.innerHTML = ""
         // hoverInfo.classList.remove('opacityGetter')
 
         // TweenMax.to(hoverInfo, 1, {
