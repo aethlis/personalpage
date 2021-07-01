@@ -38,6 +38,17 @@
     font-style: italic;
 }
 
+.projectSubTitle {
+    height: fit-content;
+    width: fit-content;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .contentPage1 {
     width: calc(100% - 8px);
     height: 450px;
