@@ -33,11 +33,7 @@
         height: fit-content;
         display: flex;
         justify-content: center;
-    }
-
-    .scrollSelector {
-        margin-left: 130px;
-        margin-top: 180px;
+        z-index: 1;
     }
 
     .projects {
@@ -50,6 +46,13 @@
         font-family: "Raleway", sans-serif;
         font-weight: bold;
         font-style: italic;
+        z-index: 5;
+    }
+
+    .scrollSelector {
+        margin-left: 130px;
+        margin-top: 180px;
+        z-index: 3;
     }
 
     .scrollContents {
@@ -57,10 +60,11 @@
         height: fit-content;
         padding-right: auto;
         display: flex;
-        padding-bottom: 30px;
-        margin-bottom: 35px;
+        margin-bottom: 65px;
         flex-flow: row nowrap;
         align-items: center;
+
+        cursor: pointer;
     }
 
         .scrollTitle {
@@ -70,7 +74,7 @@
             margin-right: auto;
             color: white;
 
-            cursor: pointer;
+            pointer-events: none;
         }
 
         .scrollType {
@@ -81,7 +85,7 @@
             margin-right: 0;
             margin-left: auto;
 
-            cursor: pointer;
+            pointer-events: none;
         }
 
     #hoverInfo {
@@ -95,6 +99,8 @@
         display: none;
         flex-flow: column nowrap;
         z-index: 3;
+        /* opacity: 0; */
+        /* transition: 1s; */
     }
 
         #hoverTitle {
@@ -105,6 +111,7 @@
             height: 40px;
             text-align: center;
             color: white;
+            text-shadow: 1px 1px 5px black, 2px 2px 3px white;
         }
 
         #hoverImage {
@@ -118,6 +125,12 @@
         #images {
             width: 100%;
         }
+
+        .opacityGetter {
+            opacity: 1;
+            transition: 1s;
+        }
+
 
         
 
@@ -183,6 +196,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
 
 <script>
+
+// const scrollContents = gsap.utils.toArray('.scrollContents');
+// var hoverInfo = document.getElementById('hoverInfo')
+
+// scrollContents.forEach (slide => {
+//     gsap.from(slide, {
+//         duration: 0.5,
+//         opacity: 0,
+//         x: 300,
+//         // rotation: -10,
+//         scrollTrigger: {
+//             trigger: slide,
+//             scrub: 1,
+//             // toggleActions: "restart none none reverse",
+//             markers: true,
+//             start: "center bottom",
+//             end: "40% 50%",
+//         }
+//     })
+// })
 
 gsap.from('.header', {
     duration: 1,
