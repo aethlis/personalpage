@@ -54,8 +54,10 @@
                     <div class="projectName">div.project ()</div>
 
                     <div class="contentPage1">
-                        <img src="./images/2020_3M_MTP/주제공감.jpg" alt="" class="contentImage1" class="contentImage1">
+                        <img src="./images/climate-change_49132068 복사본.jpeg" alt="" class="contentImage1">
                     </div>
+
+                    <div class="projectTitle">@import 기후변화가 주거권에 미치는 영향</div>
 
                     <div class="slideHolder">
                         <div class="slideGroup">
@@ -187,11 +189,24 @@ slides.forEach (slide => {
             trigger: slide,
             scrub: 1,
             // toggleActions: "restart none none reverse",
-            markers: true,
+            // markers: true,
             start: "center bottom",
             end: "40% 50%",
         }
     })
+})
+
+gsap.from('.projectTitle', {
+    // duration: 1,
+    opacity: 0,
+    y: -100,
+    scrollTrigger: {
+        trigger: '.projectTitle',
+        scrub: 1,
+        markers: true,
+        start: "300 bottom",
+        end: "200 50%"
+    }
 })
 
 gsap.from('.header', {

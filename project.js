@@ -8,7 +8,7 @@ var projects = [
         info_data: [
             {
                 project_infoname: "거캠 20/3모듈 주제중심",
-                project_img: "./images/2020_3M_MTP/주제공감.jpg",
+                project_img: "./images/M3_주제공감.jpeg",
             }
         ]
     },
