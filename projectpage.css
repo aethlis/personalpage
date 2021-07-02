@@ -98,6 +98,15 @@
         gap: 42px;
     }
 
+    .slidePhotoFinal {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 300px;
+        gap: 42px;
+    }
+
     .reverseRow {
         flex-flow: row-reverse nowrap;
     }
@@ -115,6 +124,24 @@
             background-position-y: center; */
         }
 
+        .slidePhotoResult {
+            width: 520px;
+            height: fit-content;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            /* border: solid white 4px; */
+            /* background-repeat: no-repeat;
+            background-image: url(./images/2020_3M_MTP/주제공감2.jpg);
+            background-size: cover;
+            background-position-y: center; */
+        }
+            .slideImgResult {
+                width: 100%;
+                object-fit: cover;
+            }
+
         .slideText {
             width: 450px;
             height: 354px;
@@ -123,8 +150,16 @@
             border: solid none 4px;
             font-weight: 200;
             font-size: 18px;
-            text-align: left;
-            line-height: 1.5rem;
+            text-align: justify;
+            line-height: 1.8rem;
+        }
+
+
+
+
+
+        .boldFont {
+            font-weight: 400;
         }
 
 
