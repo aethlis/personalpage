@@ -154,6 +154,18 @@
             line-height: 1.8rem;
         }
 
+        .slideTextResult {
+            width: 450px;
+            height: fit-content;
+            color: white;
+            font-family: 'apple', sans-serif;
+            border: solid none 4px;
+            font-weight: 200;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.8rem;
+        }
+
 
 
 
