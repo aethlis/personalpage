@@ -4,7 +4,7 @@ var projects = [
     {
         project_name: ".기후변화와 주거권",
         project_type: "Team Project MTP",
-        project_link: "./projectpage.html",
+        project_link: "./projectpage-climatechange.html",
         info_data: [
             {
                 project_infoname: "거캠 20/3모듈 주제중심",
@@ -16,11 +16,11 @@ var projects = [
     {
         project_name: ".잘못된 재활용",
         project_type: "Team Project PD",
-        project_link: "./",
+        project_link: "./projectpage-recycling.html",
         info_data: [
             {
                 project_infoname: "거캠 20/3모듈 문제정의",
-                project_img: "./"
+                project_img: "./images/recycling.jpeg"
             }
         ]
     },
@@ -28,7 +28,7 @@ var projects = [
     {
         project_name: ".시각장애인을 위한 교통서비스",
         project_type: "Team Project MTP",
-        project_link: "./",
+        project_link: "./projectpage-transport.html",
         info_data: [
             {
                 project_infoname: "거캠 20/4모듈 주제중심",
@@ -40,7 +40,7 @@ var projects = [
     {
         project_name: ".친환경 플라스틱 표기마크",
         project_type: "Team Project PD",
-        project_link: "./",
+        project_link: "./projectpage-bioplastic.html",
         info_data: [
             {
                 project_infoname: "거캠 20/4모듈 문제정의",
@@ -52,7 +52,7 @@ var projects = [
     {
         project_name: ".M(aking)Lab",
         project_type: "School Curriculum",
-        project_link: "./",
+        project_link: "./projectpage-MLab.html",
         info_data: [
             {
                 project_infoname: "21/1모듈 알파랩 - MLab",
@@ -64,7 +64,7 @@ var projects = [
     {
         project_name: ".C(oding)Lab",
         project_type: "School Curriculum",
-        project_link: "./",
+        project_link: "./projectpage-CLab.html",
         info_data: [
             {
                 project_infoname: "21/2모듈 알파랩 - CLab",
@@ -76,7 +76,7 @@ var projects = [
     {
         project_name: ".Wynsome",
         project_type: "Adv. Team Project",
-        project_link: "./",
+        project_link: "./projectpage-wynsome.html",
         info_data: [
             {
                 project_infoname: "문제정의 심화 - 윈썸",
@@ -88,7 +88,7 @@ var projects = [
     {
         project_name: ".내가 표현하는 음악",
         project_type: "Personal Project",
-        project_link: "./",
+        project_link: "./projectpage-producing.html",
         info_data: [
             {
                 project_infoname: "20/3모듈 개인프로젝트 - 음악 미디작곡",
@@ -100,7 +100,7 @@ var projects = [
     {
         project_name: ".믹싱 & 마스터링",
         project_type: "Personal Project",
-        project_link: "./",
+        project_link: "./projectpage-mix&master.html",
         info_data: [
             {
                 project_infoname: "20/4모듈 개인프로젝트 - 믹싱 & 마스터링",
@@ -112,7 +112,7 @@ var projects = [
     {
         project_name: ".Album 제작",
         project_type: "After School",
-        project_link: "./",
+        project_link: "./projectpage-album.html",
         info_data: [
             {
                 project_infoname: "MnJ & 오마이컴퍼니 / 크라우드 펀딩 프로젝트",
