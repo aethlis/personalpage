@@ -93,7 +93,7 @@ gsap.to('.introduction', {
     opacity: 0,
     scrollTrigger: {
         trigger: '.introduction',
-        markers: true,
+        // markers: true,
         scrub: true,
         // toggleActions: "restart none none reverse",
         start: "115% 150px",
@@ -104,11 +104,9 @@ gsap.to('.introduction', {
 
 gsap.to('.imageGroup', {
     // duration: 0.5,
-    opacity: 0.2,
-    filter: grayscale(100),
     scrollTrigger: {
         trigger: '.imageGroup',
-        markers: true,
+        // markers: true,
         scrub: true,
         // toggleActions: "restart none none reverse",
         start: "18.5% 250px",
@@ -117,11 +115,24 @@ gsap.to('.imageGroup', {
     }
 })
 
+gsap.to('.imageGroup', {
+    duration: 0.5,
+    opacity: 0.3,
+    scrollTrigger: {
+        trigger: '.myInfoDiv',
+        // markers: true,
+        // scrub: true,
+        toggleActions: "restart none none reverse",
+        start: "-90% 250px",
+        end: "+=881",
+    }
+})
+
 gsap.to('.infoTitle', {
     // duration: 0.5,
     scrollTrigger: {
         trigger: '.myInfoDiv',
-        markers: true,
+        // markers: true,
         scrub: true,
         // toggleActions: "restart none none reverse",
         start: "-90% 250px",
