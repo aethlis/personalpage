@@ -85,6 +85,13 @@ a {
     overflow: hidden;
 }
 
+.midcontentAboutMe {
+    width: 1280px;
+    height: fit-content;
+    position: relative;
+    top: 0;
+}
+
 .midcontentSpecialWithoutHidden {
     width: 1280px;
     height: 100%;
