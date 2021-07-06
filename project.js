@@ -92,7 +92,7 @@ var projects = [
         info_data: [
             {
                 project_infoname: "20/3모듈 개인프로젝트 - 음악 미디작곡",
-                project_img: "./"
+                project_img: "./images/personalprojectphoto.jpg"
             }
         ]
     },
@@ -104,7 +104,7 @@ var projects = [
         info_data: [
             {
                 project_infoname: "20/4모듈 개인프로젝트 - 믹싱 & 마스터링",
-                project_img: "./"
+                project_img: "./images/mix&master.jpg"
             }
         ]
     },
