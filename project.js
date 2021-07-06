@@ -56,7 +56,7 @@ var projects = [
         info_data: [
             {
                 project_infoname: "21/1모듈 알파랩 - MLab",
-                project_img: "./"
+                project_img: "./images/MLABBB.jpg"
             }
         ]
     },
