@@ -1,3 +1,55 @@
+/*  other */
+.projectTitle {
+    width: 1020px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.projectLightText {
+    height: fit-content;
+    width: fit-content;
+    font-size: 30px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+    .slide {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 300px;
+        gap: 42px;
+    }
+
+        .slideTextOnly {
+            width: 1020px;
+            height: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            font-family: 'apple', sans-serif;
+            font-weight: 200;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.8rem;
+        }
+
+
+/* ----------------------------------------- */
+
+
+
+
 .pageone {
     width: 100%;
     height: 5000px;
@@ -96,6 +148,7 @@
     .infoTitle {
         font-family: "apple", sans-serif;
         font-size: 30px;
+        font-weight: bold;
         color: white;
         width: 900px;
         height: fit-content;
@@ -106,7 +159,7 @@
 
     .infoTextt {
         font-family: "apple", sans-serif;
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         width: 900px;
         height: fit-content;
@@ -114,3 +167,14 @@
         margin-right: auto;
         font-weight: 200;
     }
+
+
+.infoOfMe {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 1200px;
+    margin-bottom: 300px;
+}

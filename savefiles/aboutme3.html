@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./headercss.css">
     <link rel="stylesheet" href="./webpageDefault.css">
-    <link rel="stylesheet" href="./aboutme2.css">
+    <link rel="stylesheet" href="./aboutme.css">
     <script src="https://kit.fontawesome.com/b39165152a.js" crossorigin="anonymous"></script>
     <title>H.about-me</title>
 </head>
@@ -48,38 +48,8 @@
     <div class="container">
         <div class="page pageone">
             <div class="midcontentAboutMe midone">
-
-                <div class="greetWrapper">
-                    <div class="imgWrapper">
-                        <img src="./images/aboutmephoto.jpeg" alt="" class="greetImg">
-                    </div>
-                    <div class="webpageGreetings">Hyunje Rhee</div>
-                </div>
-
-                <div class="infoWrapper">
-                    <div class="contentWrap">
-                        <div class="photoOfMe">
-                            <img src="./images/mewithguitar.jpg" alt="" class="myImageImg"> 
-                        </div>
-                        <div class="contentText">
-                            <div class="bigTitle">이현제</div>
-                            <div class="infoTextArea">별명 : <span class="fontChange">제리</span></div>
-                            <div class="infoTextArea">전화번호 : <span class="fontChange">010-8003-0276</span></div>
-                            <div class="infoTextArea">이메일 : <span class="fontChange">aethlislord@outlook.com</span></div>
-                            <br>
-                            <div class="infoTextArea">성격 유형 : <span class="fontChange">INTP</span></div>
-                            <div class="infoTextArea">관심 분야 : <span class="fontChange">Music Production</span></div>
-                            <br>
-                            <div class="infoTextArea">특이 사항 : <span class="fontChange">고양이 무지 좋아함</span></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
                 <!-- <div class="contentHolder"> -->
-                    <!-- <div class="photoWrapper">
+                    <div class="photoWrapper">
                         <div class="introduction">div.about-me</div>
 
                         <div class="imageGroup">
@@ -93,21 +63,21 @@
                                 <img src="./images/aboutmephoto.jpeg" alt="introPhoto" class="introPhoto">
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
-                    <!-- <div class="myInfoDiv">
+                    <div class="myInfoDiv">
                         <div class="infoTitle">Hyunje Rhee</div>
                         <div class="infoTextt">안녕하세요! 저는 현재 거꾸로캠퍼스에 재학중인 학생, 이현제입니다.</div>
-                    </div> -->
+                    </div>
 
-                    <!-- <div class="infoOfMe">
+                    <div class="infoOfMe">
                         <div class="projectTitle">who is <span class="projectLightText">제리</span></div>
                         <div class="slide S3">
                             <div class="slideTextOnly">
                                 인생을 어떻게 살아갈지 고민하는 18세 청소년. 음악을 괸장히 좋아하고, 유일한 삶의 낙이 고양이 사진 보는 그런 청소년.
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 <!-- </div> -->
             </div>
         </div>
@@ -121,80 +91,41 @@
 
 <script>
 
-// const slides = gsap.utils.toArray('.slide');
-// const slideTexts = gsap.utils.toArray('.slideText');
+const slides = gsap.utils.toArray('.slide');
+const slideTexts = gsap.utils.toArray('.slideText');
 
-// const projectTitles = gsap.utils.toArray('.projectTitle')
+const projectTitles = gsap.utils.toArray('.projectTitle')
 
-// slides.forEach (slide => {
-//     gsap.from(slide, {
-//         duration: 0.5,
-//         opacity: 0,
-//         x: 300,
-//         // rotation: -10,
-//         scrollTrigger: {
-//             trigger: slide,
-//             scrub: 1,
-//             // toggleActions: "restart none none reverse",
-//             // markers: true,
-//             start: "center bottom",
-//             end: "40% 70%",
-//         }
-//     })
-// })
-
-// projectTitles.forEach (projectTitle => {
-//     gsap.from(projectTitle, {
-//         // duration: 1,
-//         opacity: 0,
-//         y: -100,
-//         scrollTrigger: {
-//             trigger: projectTitle,
-//             scrub: 1,
-//             // markers: true,
-//             start: "300 bottom",
-//             end: "200 70%"
-//         }
-//     })
-// })
-gsap.to('.greetWrapper', {
-    x: -1370,
-    scale: 0.5,
-    scrollTrigger: {
-        trigger: '.greetWrapper',
-        // markers: true,
-        scrub: 0.5,
-        pin: true,
-    }
+slides.forEach (slide => {
+    gsap.from(slide, {
+        duration: 0.5,
+        opacity: 0,
+        x: 300,
+        // rotation: -10,
+        scrollTrigger: {
+            trigger: slide,
+            scrub: 1,
+            // toggleActions: "restart none none reverse",
+            // markers: true,
+            start: "center bottom",
+            end: "40% 70%",
+        }
+    })
 })
 
-gsap.from('.contentWrap', {
-    x: 1370,
-    y: 0,
-    scale: 0.5,
-    scrollTrigger: {
-        trigger: '.greetWrapper',
-        // markers: true,
-        scrub: 0.5,
-        pin: true,
-    }
-})
-
-// gsap.from('.contentWrap', {
-//     scrollTrigger: {
-//         trigger: '.contentWrap',
-//         markers: true,
-//         scrub: true,
-//         pin: true,
-//         start: "755 top",
-//         end: "1600 top"
-//     }
-// })
-
-gsap.from('.greetWrapper', {
-    duration: 1,
-    opacity: 0,
-    y: -1000,
+projectTitles.forEach (projectTitle => {
+    gsap.from(projectTitle, {
+        // duration: 1,
+        opacity: 0,
+        y: -100,
+        scrollTrigger: {
+            trigger: projectTitle,
+            scrub: 1,
+            // markers: true,
+            start: "300 bottom",
+            end: "200 70%"
+        }
+    })
 })
 
 gsap.from('.header', {
@@ -203,58 +134,58 @@ gsap.from('.header', {
     y: -100,
 })
 
-// gsap.to('.introduction', {
-//     // duration: 0.5,
-//     opacity: 0,
-//     scrollTrigger: {
-//         trigger: '.introduction',
-//         // markers: true,
-//         scrub: true,
-//         // toggleActions: "restart none none reverse",
-//         start: "115% 150px",
-//         end: "+=500",
-//         pin: true,
-//     }
-// })
+gsap.to('.introduction', {
+    // duration: 0.5,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '.introduction',
+        // markers: true,
+        scrub: true,
+        // toggleActions: "restart none none reverse",
+        start: "115% 150px",
+        end: "+=500",
+        pin: true,
+    }
+})
 
-// gsap.to('.imageGroup', {
-//     // duration: 0.5,
-//     scrollTrigger: {
-//         trigger: '.imageGroup',
-//         // markers: true,
-//         scrub: true,
-//         // toggleActions: "restart none none reverse",
-//         start: "18.5% 250px",
-//         end: "+=1500",
-//         pin: true,
-//     }
-// })
+gsap.to('.imageGroup', {
+    // duration: 0.5,
+    scrollTrigger: {
+        trigger: '.imageGroup',
+        // markers: true,
+        scrub: true,
+        // toggleActions: "restart none none reverse",
+        start: "18.5% 250px",
+        end: "+=1500",
+        pin: true,
+    }
+})
 
-// gsap.to('.imageGroup', {
-//     duration: 0.5,
-//     opacity: 0.3,
-//     scrollTrigger: {
-//         trigger: '.myInfoDiv',
-//         // markers: true,
-//         // scrub: true,
-//         toggleActions: "restart none none reverse",
-//         start: "-90% 250px",
-//         end: "+=881",
-//     }
-// })
+gsap.to('.imageGroup', {
+    duration: 0.5,
+    opacity: 0.3,
+    scrollTrigger: {
+        trigger: '.myInfoDiv',
+        // markers: true,
+        // scrub: true,
+        toggleActions: "restart none none reverse",
+        start: "-90% 250px",
+        end: "+=881",
+    }
+})
 
-// gsap.to('.infoTitle', {
-//     // duration: 0.5,
-//     scrollTrigger: {
-//         trigger: '.myInfoDiv',
-//         // markers: true,
-//         scrub: true,
-//         // toggleActions: "restart none none reverse",
-//         start: "-90% 250px",
-//         end: "+=881",
-//         pin: true,
-//     }
-// })
+gsap.to('.infoTitle', {
+    // duration: 0.5,
+    scrollTrigger: {
+        trigger: '.myInfoDiv',
+        // markers: true,
+        scrub: true,
+        // toggleActions: "restart none none reverse",
+        start: "-90% 250px",
+        end: "+=881",
+        pin: true,
+    }
+})
 
 gsap.from('.introduction', {
     duration: 1,

@@ -1,0 +1,287 @@
+/*  other */
+.projectTitle {
+    width: 1020px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.projectLightText {
+    height: fit-content;
+    width: fit-content;
+    font-size: 30px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+    .slide {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 300px;
+        gap: 42px;
+    }
+
+        .slideTextOnly {
+            width: 1020px;
+            height: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            font-family: 'apple', sans-serif;
+            font-weight: 200;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.8rem;
+        }
+
+
+/* ----------------------------------------- */
+
+
+
+
+.pageone {
+    width: 100%;
+    height: fit-content;
+}
+
+.introduction {
+    width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 110px; */
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.midone {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.greetWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.webpageGreetings {
+    position: absolute;
+    font-family: "Zhi Mang Xing", cursive;
+    font-size: 90px;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    text-shadow: 0px 0px 30px black;
+    z-index: 10;
+    margin-left: 40vw;
+}
+
+.imgWrapper {
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 4px;
+}
+
+.contentWrap {
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 4px;
+    flex-flow: row nowrap;
+    /* color: white; */
+}
+
+.contentText {
+    padding: 40px;
+    padding-left: 0;
+    width: calc(50% - 20px);
+    height: calc(100% - 80px);
+    display: flex;
+    justify-content: left;
+    flex-flow: column nowrap;
+}
+.photoOfMe {
+    margin: 40px;
+    width: calc(50% - 20px);
+    height: calc(100% - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    box-shadow: 0px 0px 30px 5px black;
+}
+.myImageImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greetImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* margin-top: 100px; */
+}
+
+.bigTitle {
+    font-family: "apple", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.infoTextArea {
+    font-family: "apple", sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 10px;
+
+    text-shadow: black 5px 5px 10px;
+}
+
+.fontChange {
+    font-weight: 400;
+}
+
+/* .contentHolder {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+} */
+
+/* .photoWrapper {
+    width: 100%;
+    height: fit-content;
+    margin-top: 110px;
+    padding-bottom: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+} */
+
+/* .imageGroup {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.introImage {
+    position: absolute;
+    width: 1020px;
+    height: 350px;
+    border: white solid 4px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    filter: grayscale(10%);
+}
+
+.ImgTwo {
+    margin-left: 20px;
+    margin-top: 10px;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.ImgThree {
+    margin-left: 40px;
+    margin-top: 20px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+    .introPhoto {
+        margin-top: 50px;
+        width: 100%;
+        z-index: 1;
+    } */
+
+
+
+
+
+
+/* .myInfoDiv {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+    .infoTitle {
+        font-family: "apple", sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        width: 900px;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    .infoTextt {
+        font-family: "apple", sans-serif;
+        font-size: 20px;
+        color: white;
+        width: 900px;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 200;
+    }
+
+
+.infoOfMe {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 1200px;
+    margin-bottom: 300px;
+} */
