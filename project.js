@@ -13,29 +13,29 @@ var projects = [
         ]
     },
 
-    {
-        project_name: ".잘못된 재활용",
-        project_type: "Team Project PD",
-        project_link: "./projectpage-recycling.html",
-        info_data: [
-            {
-                project_infoname: "거캠 20/3모듈 문제정의",
-                project_img: "./images/recycling.jpeg"
-            }
-        ]
-    },
+    // {
+    //     project_name: ".잘못된 재활용",
+    //     project_type: "Team Project PD",
+    //     project_link: "./projectpage-recycling.html",
+    //     info_data: [
+    //         {
+    //             project_infoname: "거캠 20/3모듈 문제정의",
+    //             project_img: "./images/recycling.jpeg"
+    //         }
+    //     ]
+    // },
 
-    {
-        project_name: ".시각장애인을 위한 교통서비스",
-        project_type: "Team Project MTP",
-        project_link: "./projectpage-transport.html",
-        info_data: [
-            {
-                project_infoname: "거캠 20/4모듈 주제중심",
-                project_img: "./"
-            }
-        ]
-    },
+    // {
+    //     project_name: ".시각장애인을 위한 교통서비스",
+    //     project_type: "Team Project MTP",
+    //     project_link: "./projectpage-transport.html",
+    //     info_data: [
+    //         {
+    //             project_infoname: "거캠 20/4모듈 주제중심",
+    //             project_img: "./"
+    //         }
+    //     ]
+    // },
 
     {
         project_name: ".친환경 플라스틱 표기마크",
@@ -44,7 +44,7 @@ var projects = [
         info_data: [
             {
                 project_infoname: "거캠 20/4모듈 문제정의",
-                project_img: "./"
+                project_img: "./images/2020_4M_PD/coverphoto.jpg"
             }
         ]
     },
@@ -61,17 +61,17 @@ var projects = [
         ]
     },
 
-    {
-        project_name: ".C(oding)Lab",
-        project_type: "School Curriculum",
-        project_link: "./projectpage-CLab.html",
-        info_data: [
-            {
-                project_infoname: "21/2모듈 알파랩 - CLab",
-                project_img: "./"
-            }
-        ]
-    },
+    // {
+    //     project_name: ".C(oding)Lab",
+    //     project_type: "School Curriculum",
+    //     project_link: "./projectpage-CLab.html",
+    //     info_data: [
+    //         {
+    //             project_infoname: "21/2모듈 알파랩 - CLab",
+    //             project_img: "./"
+    //         }
+    //     ]
+    // },
 
     {
         project_name: ".Wynsome",
@@ -109,17 +109,17 @@ var projects = [
         ]
     },
 
-    {
-        project_name: ".Album 제작",
-        project_type: "After School",
-        project_link: "./projectpage-album.html",
-        info_data: [
-            {
-                project_infoname: "MnJ & 오마이컴퍼니 / 크라우드 펀딩 프로젝트",
-                project_img: "./"
-            }
-        ]
-    },
+    // {
+    //     project_name: ".Album 제작",
+    //     project_type: "After School",
+    //     project_link: "./projectpage-album.html",
+    //     info_data: [
+    //         {
+    //             project_infoname: "MnJ & 오마이컴퍼니 / 크라우드 펀딩 프로젝트",
+    //             project_img: "./"
+    //         }
+    //     ]
+    // },
 
 ]
 
