@@ -74,7 +74,7 @@ var projects = [
     // },
 
     {
-        project_name: ".Wynsome",
+        project_name: ".대안학교부터 전자 폐기물까지",
         project_type: "Adv. Team Project",
         project_link: "./projectpage-wynsome.html",
         info_data: [
