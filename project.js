@@ -73,17 +73,17 @@ var projects = [
     //     ]
     // },
 
-    {
-        project_name: ".대안학교부터 전자 폐기물까지",
-        project_type: "Adv. Team Project",
-        project_link: "./projectpage-wynsome.html",
-        info_data: [
-            {
-                project_infoname: "문제정의 심화 - 윈썸",
-                project_img: "./"
-            }
-        ]
-    },
+    // {
+    //     project_name: ".대안학교부터 전자 폐기물까지",
+    //     project_type: "Adv. Team Project",
+    //     project_link: "./projectpage-wynsome.html",
+    //     info_data: [
+    //         {
+    //             project_infoname: "문제정의 심화 - 윈썸",
+    //             project_img: "./"
+    //         }
+    //     ]
+    // },
 
     {
         project_name: ".내가 표현하는 음악",
