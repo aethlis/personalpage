@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.midcontent {
+    width: 1280px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* page 1 css */
+
+.pageone {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .midone {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contentHolder {
+        height: 100%;
+        width: fit-content;
+        margin-top: 110px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+
+    .projectName {
+        height: fit-content;
+        width: fit-content;
+        font-size: 30px;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .musicGrid {
+        display: grid;
+        max-width: 1020px;
+        min-width: 188px;
+        height: 1000px;
+        grid-template-columns: repeat(auto-fill, minmax(188px, 188px));
+        grid-template-rows: repeat(auto-fill, minmax(188px, 188px));
+        column-gap: 20px;
+        row-gap: 20px;
+    }
