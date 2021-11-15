@@ -168,7 +168,7 @@ Array.prototype.forEach.call(el, function (item, index) {
             ease: Circ.easeOut
         })
 
-        document.querySelector('scrollWrap') = () => tween.play()
+        document.querySelector(".scrollWrap") = () => tween.play()
         
         // hoverInfo.classList.add('.opacityGetter')
 
@@ -215,7 +215,7 @@ Array.prototype.forEach.call(el, function (item, index) {
             ease: Circ.easeOut
         })
 
-        document.querySelector('scrollWrap') = () => tween.play()
+        document.querySelector(".scrollWrap") = () => tween.play()
 
         hoverTitle.innerHTML = ""
         hoverImage.innerHTML = ""
